@@ -74,3 +74,8 @@ Image Processing
     Pydub
     Ultralytics
     Pillow (PIL)
+
+<p align="center">
+ <img src="files/ai-cat.jpeg" width="512px">
+</p>
+
