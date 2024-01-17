@@ -70,17 +70,17 @@ def handle_images(message):
         response = requests.get(image_url)
 
         # Save the image in the current directory
-        with open(f"image_{chat_id}_{message_id}.jpg", 'wb') as f:
+        with open(f"./temp/image_{chat_id}_{message_id}.jpg", 'wb') as f:
             f.write(response.content)
 
         # Process the image using your YOLO model
-        results = model.predict(f"image_{chat_id}_{message_id}.jpg")
+        results = model.predict(f"./temp/image_{chat_id}_{message_id}.jpg")
         result = results[0]
         image = Image.fromarray(result.plot()[:,:,::-1])
-        image.save(f"image_{chat_id}_{message_id}_yolo.jpg")
+        image.save(f"./temp/image_{chat_id}_{message_id}_yolo.jpg")
         
         # Send the processed image back to the user
-        with open(f"image_{chat_id}_{message_id}_yolo.jpg", 'rb') as photo:
+        with open(f"./temp/image_{chat_id}_{message_id}_yolo.jpg", 'rb') as photo:
             bot.send_photo(chat_id, photo)
 
 
