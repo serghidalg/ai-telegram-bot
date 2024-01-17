@@ -4,6 +4,9 @@
  <img src="files/bot.png" width="512px">
 </p>
 
+<p align="center">
+ <img src="files/video.gif" width="512px">
+</p>
 
 **ai-telegram-bot** is a Telegram bot powered by AI to provide interesting interactions, Ollama conversations, and image processing capabilities.
 
