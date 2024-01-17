@@ -1,0 +1,7 @@
+venv
+__pycache__
+variables.py
+.variables.py.backup
+temp
+*jpg
+yolo*
