@@ -87,5 +87,5 @@ def handle_images(message):
     except Exception as e:
         print(f"Error processing the image: {e}")
 
-model = YOLO("yolov8m.pt")
+model = YOLO("yolov8x.pt")
 bot.infinity_polling()
